@@ -628,7 +628,7 @@
 // End configuration
 
 #if KEYPAD_ENABLE == 1 && !defined(I2C_STROBE_PORT)
-#error Keypad plugin not supported!
+#error "Keypad plugin not supported!"
 #elif I2C_STROBE_ENABLE && !defined(I2C_STROBE_PORT)
 #error I2C strobe not supported!
 #endif
