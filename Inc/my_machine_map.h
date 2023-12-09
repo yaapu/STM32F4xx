@@ -31,7 +31,7 @@
 #define BOARD_URL "https://www.makerfabs.com/arduino-cnc-shield-v3.html"
 
 #define SERIAL_PORT     2   // GPIOA: TX = 2, RX = 3
-//#define SERIAL1_PORT    2   // GPIOA: TX = 2, RX = 3
+#define SERIAL1_PORT   31   // GPIOC: TX = 10, RX = 11
 
 #define I2C_PORT        1   // GPIOB: SCL = 8, SDA = 9
 #define IS_NUCLEO_BOB
