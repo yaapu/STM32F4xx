@@ -486,12 +486,12 @@
       "caps": {
         "axes": 3,
         "usb_cdc": 0,
-        "digital_in": 0,
-        "digital_out": 0,
+        "digital_in": 2,
+        "digital_out": 3,
         "safety_door": 0,
-        "eeprom": 0,
-        "fram": 0,
-        "i2c": 0,
+        "eeprom": 1,
+        "fram": 1,
+        "i2c": 1,
         "pio_board": "nucleo_f446re",
         "ldscript": "STM32F446RETX_FLASH.ld"    
       },

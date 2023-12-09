@@ -31,6 +31,7 @@
 #define BOARD_URL "https://www.makerfabs.com/arduino-cnc-shield-v3.html"
 
 #define SERIAL_PORT     2   // GPIOA: TX = 2, RX = 3
+
 #define I2C_PORT        1   // GPIOB: SCL = 8, SDA = 9
 #define IS_NUCLEO_BOB
 #define VARIABLE_SPINDLE // Comment out to disable variable spindle
@@ -113,5 +114,19 @@
 // Define probe switch input pin.
 #define PROBE_PORT              GPIOC // A5
 #define PROBE_PIN               0
+
+// 2 AUX in
+#define AUXINPUT0_PORT          GPIOC
+#define AUXINPUT0_PIN           10
+#define AUXINPUT1_PORT          GPIOC
+#define AUXINPUT1_PIN           12
+
+// 3 AUX out
+#define AUXOUTPUT0_PORT         GPIOC
+#define AUXOUTPUT0_PIN          8
+#define AUXOUTPUT1_PORT         GPIOC
+#define AUXOUTPUT1_PIN          6
+#define AUXOUTPUT2_PORT         GPIOC
+#define AUXOUTPUT2_PIN          5
 
 /**/
