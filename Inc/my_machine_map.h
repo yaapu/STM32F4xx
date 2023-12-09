@@ -19,7 +19,7 @@
   along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#if N_ABC_MOTORS
+#if N_ABC_MOTORS > 1
 #error "Axis configuration is not supported!"
 #endif
 
@@ -31,8 +31,12 @@
 #define BOARD_URL "https://www.makerfabs.com/arduino-cnc-shield-v3.html"
 
 #define SERIAL_PORT     2   // GPIOA: TX = 2, RX = 3
+//#define SERIAL1_PORT    2   // GPIOA: TX = 2, RX = 3
+
 #define I2C_PORT        1   // GPIOB: SCL = 8, SDA = 9
 #define IS_NUCLEO_BOB
+#define HAS_IOPORTS
+#define VARIABLE_SPINDLE // Comment out to disable variable spindle
 
 // Define step pulse output pins.
 #define X_STEP_PORT             GPIOA // D2
@@ -57,7 +61,8 @@
 // Define stepper driver enable/disable output pin.
 #define STEPPERS_ENABLE_PORT    GPIOA // D8
 #define STEPPERS_ENABLE_PIN     9
-#define STEPPERS_ENABLE_MASK    STEPPERS_ENABLE_BIT//#define STEPPERS_ENABLE_PINMODE PINMODE_OD // Uncomment for open drain outputs
+#define STEPPERS_ENABLE_MASK    STEPPERS_ENABLE_BIT
+//#define STEPPERS_ENABLE_PINMODE PINMODE_OD // Uncomment for open drain outputs
 
 // Define homing/hard limit switch input pins.
 #define X_LIMIT_PORT            GPIOC // D9
@@ -77,35 +82,21 @@
 
 #define Z_LIMIT_POLL
 
-// Define driver spindle pins
-
-#if DRIVER_SPINDLE_PWM_ENABLE // D11
-#define SPINDLE_PWM_PORT_BASE   GPIOA_BASE
-#define SPINDLE_PWM_PIN         7
+// Define spindle enable and spindle direction output pins.
+#ifdef VARIABLE_SPINDLE
+  #define SPINDLE_ENABLE_PORT   GPIOB // on morpho header
+  #define SPINDLE_ENABLE_PIN    7
 #else
-#define AUXOUTPUT0_PORT         GPIOA
-#define AUXOUTPUT0_PIN          7
+  #define SPINDLE_ENABLE_PORT   GPIOA // D12
+  #define SPINDLE_ENABLE_PIN    6
 #endif
-
-#if DRIVER_SPINDLE_DIR_ENABLE // D13
-#define SPINDLE_DIRECTION_PORT  GPIOA
+#define SPINDLE_DIRECTION_PORT  GPIOA // D13
 #define SPINDLE_DIRECTION_PIN   5
-#else
-#define AUXOUTPUT1_PORT         GPIOA
-#define AUXOUTPUT1_PIN          5
-#endif
 
-#if DRIVER_SPINDLE_ENABLE
-#if DRIVER_SPINDLE_PWM_ENABLE
-#define SPINDLE_ENABLE_PORT     GPIOB // on morpho header
-#define SPINDLE_ENABLE_PIN      7
-#else
-#define SPINDLE_ENABLE_PORT     GPIOA // D12
-#define SPINDLE_ENABLE_PIN      6
-#endif
-#elif !DRIVER_SPINDLE_PWM_ENABLE
-#define AUXOUTPUT2_PORT         GPIOA
-#define AUXOUTPUT2_PIN          6
+// Define spindle PWM output pin.
+#ifdef VARIABLE_SPINDLE
+#define SPINDLE_PWM_PORT_BASE   GPIOA_BASE // D11
+#define SPINDLE_PWM_PIN         7
 #endif
 
 // Define flood and mist coolant enable output pins.
@@ -125,5 +116,32 @@
 // Define probe switch input pin.
 #define PROBE_PORT              GPIOC // A5
 #define PROBE_PIN               0
+
+// 2 AUX in
+#define AUXINPUT0_PORT          GPIOC
+#define AUXINPUT0_PIN           10
+#define AUXINPUT1_PORT          GPIOC
+#define AUXINPUT1_PIN           12
+
+// 3 AUX out
+#define AUXOUTPUT0_PORT         GPIOC
+#define AUXOUTPUT0_PIN          8
+#define AUXOUTPUT1_PORT         GPIOC
+#define AUXOUTPUT1_PIN          6
+#define AUXOUTPUT2_PORT         GPIOC
+#define AUXOUTPUT2_PIN          5
+
+// Define ganged axis or A axis step pulse and step direction output pins.
+#if N_ABC_MOTORS == 1
+#define M3_AVAILABLE
+#define M3_LIMIT_PORT           GPIOB
+#define M3_LIMIT_PIN            2
+#define M3_STEP_PORT            GPIOB
+#define M3_STEP_PIN             1
+#define M3_DIRECTION_PORT       GPIOB
+#define M3_DIRECTION_PIN        15
+#define M3_ENABLE_PORT          GPIOB
+#define M3_ENABLE_PIN           14
+#endif
 
 /**/
