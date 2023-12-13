@@ -33,7 +33,7 @@
 #define SERIAL_PORT     2   // GPIOA: TX = 2, RX = 3
 #define I2C_PORT        1   // GPIOB: SCL = 8, SDA = 9
 #define IS_NUCLEO_BOB
-//#define PROTONEER_SPINDLE_PWM // Uncomment to use PA5 (D13) as spindle PWM output instead of spindle direction
+#define PROTONEER_SPINDLE_PWM // Uncomment to use PA5 (D13) as spindle PWM output instead of spindle direction
 
 #if ETHERNET_ENABLE
 #define SPI_PORT                2 // GPIOB, SCK_PIN = 13, MISO_PIN = 14, MOSI_PIN = 15
@@ -109,8 +109,8 @@
 #define COOLANT_FLOOD_PIN       0
 
 // Define user-control CONTROLs (cycle start, reset, feed hold) input pins.
-#define CONTROL_PORT            GPIOA // A0
-#define RESET_PIN               0
+#define CONTROL_PORT            GPIOA
+#define RESET_PIN               0 // A0
 #define FEED_HOLD_PIN           1 // A1
 #define CYCLE_START_PIN         4 // A2
 #define CONTROL_INMODE          GPIO_MAP
