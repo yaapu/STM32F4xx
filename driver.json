@@ -504,6 +504,29 @@
           "NUCLEO_F446": "",
           "RTC_ENABLE": 1
       }
+    },
+    {
+      "name": "My Machine/Nucleo-64 (STM32F446)",
+      "symbol": "BOARD_MY_MACHINE",
+      "URL": "https://www.makerfabs.com/arduino-cnc-shield-v3.html",
+      "MAP": "Inc/my_machine_map.h",
+      "caps": {
+        "axes": 4,
+        "usb_cdc": 0,
+        "digital_in": 0,
+        "digital_out": 3,
+        "safety_door": 0,
+        "eeprom": 1,
+        "fram": 1,
+        "i2c": 1,
+        "pio_board": "nucleo_f446re",
+        "ldscript": "STM32F446RETX_FLASH.ld"    
+      },
+      "symbols": {
+          "STM32F446xx": "",
+          "NUCLEO_F446": "",
+          "RTC_ENABLE": 1
+      }
     }
   ]
 }
