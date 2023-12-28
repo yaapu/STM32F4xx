@@ -38,6 +38,10 @@
 #define HAS_IOPORTS
 #define VARIABLE_SPINDLE // Comment out to disable variable spindle
 
+#if ETHERNET_ENABLE
+#define SPI_PORT                1 // GPIOA, SCK_PIN = 5, MISO_PIN = 6, MOSI_PIN = 7
+#endif
+
 // Define step pulse output pins.
 #define X_STEP_PORT             GPIOA // D2
 #define X_STEP_PIN              10
@@ -143,4 +147,18 @@
 #define M3_ENABLE_PIN           14
 #endif
 
+#ifdef SPI_PORT
+
+#if ETHERNET_ENABLE
+#undef SPI_ENABLE
+#define SPI_ENABLE 1
+#define SPI_CS_PORT             GPIOC
+#define SPI_CS_PIN              8
+#define SPI_IRQ_PORT            GPIOB
+#define SPI_IRQ_PIN             0
+#define SPI_RST_PORT            GPIOB
+#define SPI_RST_PIN             2
+#endif
+
+#endif
 /**/
