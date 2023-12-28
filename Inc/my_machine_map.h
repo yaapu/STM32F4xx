@@ -59,8 +59,8 @@
 //#define DIRECTION_PINMODE       PINMODE_OD // Uncomment for open drain outputs
 
 // Define stepper driver enable/disable output pin.
-#define STEPPERS_ENABLE_PORT    GPIOA // D8
-#define STEPPERS_ENABLE_PIN     9
+#define STEPPERS_ENABLE_PORT    GPIOC // Morpho CN7
+#define STEPPERS_ENABLE_PIN     12
 #define STEPPERS_ENABLE_MASK    STEPPERS_ENABLE_BIT
 //#define STEPPERS_ENABLE_PINMODE PINMODE_OD // Uncomment for open drain outputs
 
