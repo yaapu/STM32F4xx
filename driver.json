@@ -569,7 +569,8 @@
         "fram": 1,
         "i2c": 1,
         "pio_board": "nucleo_f446re",
-        "ldscript": "STM32F446RETX_FLASH.ld"    
+        "ldscript": "STM32F446RETX_FLASH.ld",
+        "wiznet": 1
       },
       "symbols": {
           "STM32F446xx": "",
