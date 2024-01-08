@@ -19,7 +19,7 @@
   along with Grbl.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-#define COMPATIBILITY_LEVEL 1
+#define COMPATIBILITY_LEVEL 0
 // NOTE: Only one board may be enabled!
 // If none is enabled pin mappings from generic_map.h will be used.
 //#define BOARD_CNC3040
@@ -137,10 +137,10 @@
 #endif
 
 // The following symbols have the default values as shown, uncomment and change as needed.
-//#define NETWORK_HOSTNAME        "grblHAL"
+#define NETWORK_HOSTNAME        "grblHAL"
 #define NETWORK_IPMODE          0 // 0 = static, 1 = DHCP, 2 = AutoIP
-#define NETWORK_IP              "192.168.5.1"
-#define NETWORK_GATEWAY         "192.168.5.1"
+#define NETWORK_IP              "192.168.1.254"
+#define NETWORK_GATEWAY         "192.168.1.1"
 #define NETWORK_MASK            "255.255.255.0"
 //#define NETWORK_FTP_PORT        21
 #define NETWORK_TELNET_PORT     23

@@ -152,12 +152,12 @@
 #if ETHERNET_ENABLE
 #undef SPI_ENABLE
 #define SPI_ENABLE 1
-#define SPI_CS_PORT             GPIOC
+#define SPI_CS_PORT             GPIOA
 #define SPI_CS_PIN              13
-#define SPI_IRQ_PORT            GPIOC
-#define SPI_IRQ_PIN             14
-#define SPI_RST_PORT            GPIOC
-#define SPI_RST_PIN             15
+#define SPI_RST_PORT            GPIOA
+#define SPI_RST_PIN             14
+#define SPI_IRQ_PORT            GPIOA
+#define SPI_IRQ_PIN             15
 #endif
 
 #endif

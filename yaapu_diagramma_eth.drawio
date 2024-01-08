@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-29T11:40:36.406Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="rhC_GVpSURRdKbBflylT" version="22.1.15" type="device">
+<mxfile host="app.diagrams.net" modified="2024-01-08T17:36:49.647Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="reO59QQYOX2P88mEkZWH" version="22.1.17" type="device">
   <diagram name="Pagina-1" id="LzgvAVyA7hXLxxnheRRv">
-    <mxGraphModel dx="1615" dy="803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2074" dy="1098" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -103,29 +103,29 @@
         <mxCell id="i2FmrF8MPZXTL_JsvExn-37" value="OUT 1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="1336" y="504" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-3" value="OUT 2" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-3" value="OUT 2" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="1330" y="421" width="80" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://os.mbed.com/media/uploads/jeromecoutant/nucleo_f446re_morpho_right_2021_10_26.png;" vertex="1" parent="1">
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-4" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://os.mbed.com/media/uploads/jeromecoutant/nucleo_f446re_morpho_right_2021_10_26.png;" parent="1" vertex="1">
           <mxGeometry x="370" y="1160" width="1320" height="990" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://os.mbed.com/media/uploads/jeromecoutant/nucleo_f446re_morpho_left_2021_10_26.png;" vertex="1" parent="1">
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-5" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://os.mbed.com/media/uploads/jeromecoutant/nucleo_f446re_morpho_left_2021_10_26.png;" parent="1" vertex="1">
           <mxGeometry x="370" y="2484" width="1363.67" height="1022.75" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI2_MISO&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI2_MISO&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1340" y="725" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI2_MOSI&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI2_MOSI&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
           <mxGeometry x="1340" y="698" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI_CS&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="244" y="670" width="110" height="20" as="geometry" />
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI_CS&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="247" y="533" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI_CS&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="243" y="698" width="110" height="20" as="geometry" />
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI_IRQ&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="247" y="584.5" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="sK_jo0JQqAsLvIl51CuT-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI_CS&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="243" y="724" width="110" height="20" as="geometry" />
+        <mxCell id="sK_jo0JQqAsLvIl51CuT-13" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;SPI_RST&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="247" y="560" width="110" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
